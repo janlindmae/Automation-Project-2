@@ -21,5 +21,6 @@ describe("Issue delete", () => {
     IssueModal.clickDeleteButton();
     IssueModal.cancelDeletion();
     IssueModal.closeDetailModal();
+    cy.contains(issueTitle).should("be.visible");
   });
 });
