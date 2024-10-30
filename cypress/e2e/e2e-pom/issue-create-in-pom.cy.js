@@ -60,7 +60,7 @@ describe("Issue create", () => {
     assignee: "Lord Gaben",
   };
 
-  it.only("Create a third issue using faker data", () => {
+  it("Create a third issue using faker data", () => {
     IssueModal.createIssue(fakerIssue);
     IssueModal.ensureIssueIsCreated(EXPECTED_AMOUNT_OF_ISSUES, fakerIssue);
   });
